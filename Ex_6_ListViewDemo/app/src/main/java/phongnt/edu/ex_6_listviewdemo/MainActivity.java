@@ -61,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
             //Hiện lên màn hình một thông báo nhanh về vị trí của phần tử vừa chọn
             ////Lấy giá trị của phần tử thứ i
             String strTenTinhChon = dsTenTinhThanhVN.get(i);
-            //Toast.makeText(MainActivity.this, "Bạn vừa chọn: "+String.valueOf(i), Toast.LENGTH_LONG).show();
-            Toast.makeText(MainActivity.this,strTenTinhChon, Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, "Bạn vừa chọn: "+String.valueOf(i), Toast.LENGTH_LONG).show();
+            //Toast.makeText(MainActivity.this,strTenTinhChon, Toast.LENGTH_LONG).show();
 
         }
     };
