@@ -14,7 +14,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="100dp"
         android:text="Lời Bài Hát"
-        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintBottom_toTopOf="@+id/lvLoiBaiHatYeuThich"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ListView
-        android:id="@+id/listView"
+        android:id="@+id/lvLoiBaiHatYeuThich"
         android:layout_width="409dp"
         android:layout_height="610dp"
         android:layout_marginStart="1dp"
