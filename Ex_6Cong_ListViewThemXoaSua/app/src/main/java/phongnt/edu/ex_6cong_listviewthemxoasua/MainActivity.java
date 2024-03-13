@@ -37,12 +37,13 @@ public class MainActivity extends AppCompatActivity {
         dsBH.add("Error");
         dsBH.add("Aqua-iro Pallete");
         dsBH.add("Nekokaburi-na");
+        dsBH.add("SIUUUUUUUUUUU");
 
         adapterBH = new ArrayAdapter<String>(this,
                                              android.R.layout.simple_list_item_1,
                                              dsBH);
 
-        ListView lvBaiHat = findViewById(R.id.lvLoiBaiHatYeuThich);
+        lvBaiHat = findViewById(R.id.lvLoiBaiHatYeuThich);
         lvBaiHat.setAdapter(adapterBH);
         lvBaiHat.setOnItemClickListener(BoLangNghevaXL);
 
