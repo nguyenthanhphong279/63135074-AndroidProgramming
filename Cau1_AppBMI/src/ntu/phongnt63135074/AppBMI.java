@@ -73,30 +73,35 @@ public class AppBMI extends JFrame {
 		
 		
 		JLabel lblNewLabel_3 = new JLabel("Thiếu cân <18.5");
+		lblNewLabel_3.setForeground(new Color(0, 128, 255));
 		lblNewLabel_3.setBackground(new Color(128, 255, 255));
 		lblNewLabel_3.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		lblNewLabel_3.setBounds(10, 357, 133, 44);
 		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_3_1 = new JLabel("Cân đối 18.5-24.5");
+		lblNewLabel_3_1.setForeground(new Color(0, 255, 64));
 		lblNewLabel_3_1.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		lblNewLabel_3_1.setBackground(new Color(0, 255, 0));
 		lblNewLabel_3_1.setBounds(199, 357, 151, 44);
 		contentPane.add(lblNewLabel_3_1);
 		
 		JLabel lblNewLabel_3_2 = new JLabel("Thừa cân 25-29.9");
+		lblNewLabel_3_2.setForeground(new Color(255, 128, 192));
 		lblNewLabel_3_2.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		lblNewLabel_3_2.setBackground(new Color(255, 255, 0));
 		lblNewLabel_3_2.setBounds(416, 357, 144, 44);
 		contentPane.add(lblNewLabel_3_2);
 		
 		JLabel lblNewLabel_3_3 = new JLabel("Béo phì 30-34.9");
+		lblNewLabel_3_3.setForeground(new Color(255, 128, 64));
 		lblNewLabel_3_3.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		lblNewLabel_3_3.setBackground(new Color(255, 128, 64));
 		lblNewLabel_3_3.setBounds(118, 411, 133, 44);
 		contentPane.add(lblNewLabel_3_3);
 		
 		JLabel lblNewLabel_3_4 = new JLabel("Béo phì nguy hiểm >34.9");
+		lblNewLabel_3_4.setForeground(new Color(255, 0, 0));
 		lblNewLabel_3_4.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		lblNewLabel_3_4.setBackground(new Color(255, 0, 0));
 		lblNewLabel_3_4.setBounds(300, 411, 239, 44);
