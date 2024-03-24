@@ -19,8 +19,8 @@ public class AppBMI extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
+	private JTextField txtChieuCao;
+	private JTextField txtCanNang;
 
 	
 	public AppBMI() {
@@ -47,15 +47,15 @@ public class AppBMI extends JFrame {
 		lblCanNang.setBounds(10, 134, 165, 44);
 		contentPane.add(lblCanNang);
 		
-		textField = new JTextField();
-		textField.setBounds(161, 80, 312, 34);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		txtChieuCao = new JTextField();
+		txtChieuCao.setBounds(161, 80, 312, 34);
+		contentPane.add(txtChieuCao);
+		txtChieuCao.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setBounds(161, 142, 312, 34);
-		contentPane.add(textField_1);
-		textField_1.setColumns(10);
+		txtCanNang = new JTextField();
+		txtCanNang.setBounds(161, 142, 312, 34);
+		contentPane.add(txtCanNang);
+		txtCanNang.setColumns(10);
 		
 		JButton btnTinh = new JButton("Tính");
 		btnTinh.setFont(new Font("Times New Roman", Font.PLAIN, 20));
@@ -109,6 +109,7 @@ public class AppBMI extends JFrame {
 	}
 	
 	private void tinhBMI() {
-		
+		double chieuCao = Double.parseDouble(txtChieuCao.getText());
+		double canNang = Double.parseDouble(txtCanNang.getText());
 	}
 }
