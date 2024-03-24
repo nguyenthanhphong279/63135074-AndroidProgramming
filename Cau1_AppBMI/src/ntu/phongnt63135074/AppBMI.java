@@ -115,7 +115,22 @@ public class AppBMI extends JFrame {
 		inKQ(ketQua);
 	}
 	
-	private void inKQ() {
-		
+	private void inKQ(double ketQua) {
+		String BMI;
+		if(ketQua < 18.5){
+            BMI = "Thiếu cân! Bạn hãy bổ sung thêm nhiều thực phẩm";
+        }
+        else if(ketQua >= 18.5 && ketQua < 24.9){
+            BMI = "Chúc mừng bạn có thân hình cân đối!";
+        }
+        else if(ketQua >= 25 && ketQua < 29.9){
+            BMI = "Bạn đang trong tình trạng thừa cân!";
+        }
+        else if(ketQua >= 30 && ketQua < 34.9){
+            BMI = "Bạn đang trong tình trạng béo phì!";
+        }
+        else{
+            BMI = "Bạn đang trong tình trạng béo phì nguy hiểm!!!";
+        }
 	}
 }
