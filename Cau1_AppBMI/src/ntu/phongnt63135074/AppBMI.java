@@ -8,6 +8,9 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Color;
@@ -60,6 +63,14 @@ public class AppBMI extends JFrame {
 		btnTinh.setBounds(234, 209, 114, 34);
 		contentPane.add(btnTinh);
 		
+		btnTinh.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                tinhBMI();
+            }
+        });
+		
+		
 		JLabel lblNewLabel_3 = new JLabel("Thiếu cân <18.5");
 		lblNewLabel_3.setBackground(new Color(128, 255, 255));
 		lblNewLabel_3.setFont(new Font("Times New Roman", Font.PLAIN, 20));
@@ -95,5 +106,9 @@ public class AppBMI extends JFrame {
 		lblKetQua.setFont(new Font("Tahoma", Font.BOLD, 20));
 		lblKetQua.setBounds(10, 264, 550, 74);
 		contentPane.add(lblKetQua);
+	}
+	
+	private void tinhBMI() {
+		
 	}
 }
