@@ -108,6 +108,7 @@ public class AppBMI extends JFrame {
 		contentPane.add(lblNewLabel_3_4);
 		
 		txtKetQua = new JTextField();
+		txtKetQua.setFont(new Font("Times New Roman", Font.BOLD, 20));
 		txtKetQua.setBounds(10, 269, 560, 78);
 		contentPane.add(txtKetQua);
 		txtKetQua.setColumns(10);
@@ -116,7 +117,7 @@ public class AppBMI extends JFrame {
 	private void tinhBMI() {
 		double chieuCao = Double.parseDouble(txtChieuCao.getText());
 		double canNang = Double.parseDouble(txtCanNang.getText());
-		double ketQua = canNang / (chieuCao * chieuCao);
+		double ketQua = canNang / (chieuCao * chieuCao / 10000);
 		inKQ(ketQua);
 	}
 	
