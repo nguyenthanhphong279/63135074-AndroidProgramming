@@ -111,5 +111,11 @@ public class AppBMI extends JFrame {
 	private void tinhBMI() {
 		double chieuCao = Double.parseDouble(txtChieuCao.getText());
 		double canNang = Double.parseDouble(txtCanNang.getText());
+		double ketQua = canNang / (chieuCao * chieuCao);
+		inKQ(ketQua);
+	}
+	
+	private void inKQ() {
+		
 	}
 }
