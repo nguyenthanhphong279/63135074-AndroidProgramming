@@ -29,10 +29,10 @@ public class AppBMI extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblPhammem = new JLabel("Phần Mềm Tính Chỉ Số BMI");
-		lblPhammem.setFont(new Font("Times New Roman", Font.BOLD, 25));
-		lblPhammem.setBounds(118, 10, 339, 44);
-		contentPane.add(lblPhammem);
+		JLabel lblPhamMem = new JLabel("Phần Mềm Tính Chỉ Số BMI");
+		lblPhamMem.setFont(new Font("Times New Roman", Font.BOLD, 25));
+		lblPhamMem.setBounds(118, 10, 339, 44);
+		contentPane.add(lblPhamMem);
 		
 		JLabel lblChieuCao = new JLabel("Chiều cao (cm):");
 		lblChieuCao.setFont(new Font("Times New Roman", Font.PLAIN, 20));
@@ -54,11 +54,11 @@ public class AppBMI extends JFrame {
 		contentPane.add(textField_1);
 		textField_1.setColumns(10);
 		
-		JButton btnNewButton = new JButton("Tính");
-		btnNewButton.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btnNewButton.setBackground(new Color(255, 0, 0));
-		btnNewButton.setBounds(234, 209, 114, 34);
-		contentPane.add(btnNewButton);
+		JButton btnTinh = new JButton("Tính");
+		btnTinh.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		btnTinh.setBackground(new Color(255, 0, 0));
+		btnTinh.setBounds(234, 209, 114, 34);
+		contentPane.add(btnTinh);
 		
 		JLabel lblNewLabel_3 = new JLabel("Thiếu cân <18.5");
 		lblNewLabel_3.setBackground(new Color(128, 255, 255));
