@@ -21,6 +21,7 @@ public class AppBMI extends JFrame {
 	private JPanel contentPane;
 	private JTextField txtChieuCao;
 	private JTextField txtCanNang;
+	private JTextField txtKetQua;
 
 	
 	public AppBMI() {
@@ -101,11 +102,10 @@ public class AppBMI extends JFrame {
 		lblNewLabel_3_4.setBounds(300, 411, 239, 44);
 		contentPane.add(lblNewLabel_3_4);
 		
-		JLabel lblKetQua = new JLabel("");
-		lblKetQua.setEnabled(false);
-		lblKetQua.setFont(new Font("Tahoma", Font.BOLD, 20));
-		lblKetQua.setBounds(10, 264, 550, 74);
-		contentPane.add(lblKetQua);
+		txtKetQua = new JTextField();
+		txtKetQua.setBounds(10, 269, 560, 78);
+		contentPane.add(txtKetQua);
+		txtKetQua.setColumns(10);
 	}
 	
 	private void tinhBMI() {
@@ -132,5 +132,9 @@ public class AppBMI extends JFrame {
         else{
             BMI = "Bạn đang trong tình trạng béo phì nguy hiểm!!!";
         }
+		txtKetQua.setText(String.format("BMI: %.1f\n %s", ketQua , BMI));
 	}
+	
+	
 }
+
