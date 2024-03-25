@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#00BCD4"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -29,5 +29,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/_34189540_1430191780922355_4296598885727209054_n" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Họ và tên: NGUYỄN THANH PHONG"
+        android:textColor="#040303"
+        android:textSize="23dp"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày sinh:  27/09/2003"
+        android:textColor="#191818"
+        android:textSize="23dp"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="372dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
