@@ -12,7 +12,7 @@
         android:layout_width="66dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:text="Số 1:"
         android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,11 +22,11 @@
         android:id="@+id/edtSo1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -81,10 +81,11 @@
         android:id="@+id/btnRandom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="16dp"
         android:text="Tạo số ngẫu nhiên"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtKq" />
 
@@ -93,16 +94,16 @@
         android:layout_width="125dp"
         android:layout_height="108dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRandom"
         app:srcCompat="@drawable/cong" />
 
     <ImageButton
         android:id="@+id/imgbtnTru"
-        android:layout_width="146dp"
-        android:layout_height="111dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="133dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="44dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRandom"
@@ -110,20 +111,20 @@
 
     <ImageButton
         android:id="@+id/imgbtnNhan"
-        android:layout_width="115dp"
-        android:layout_height="111dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="105dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgbtnCong"
         app:srcCompat="@drawable/nhan__1___1_" />
 
     <ImageButton
         android:id="@+id/imgbtnChia"
-        android:layout_width="146dp"
-        android:layout_height="117dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="36dp"
+        android:layout_width="129dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="44dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgbtnTru"
         app:srcCompat="@drawable/hqdefault__1_" />
