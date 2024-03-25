@@ -32,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
         TimDieuKhien();
         nutCong.setOnClickListener(boLangNghe_XuLyCong);
         nutTru.setOnClickListener(boLangNghe_XuLyTru);
+        nutNhan.setOnClickListener(boLangNghe_XuLyChia);
+        nutChia.setOnClickListener(boLangNghe_XuLyChia);
+
+
     }
     void TimDieuKhien(){
         editTextSo1 = (EditText)findViewById(R.id.edtSo1);
@@ -69,4 +73,31 @@ public class MainActivity extends AppCompatActivity {
             editTextKQ.setText(strKQ);
         }
     };
+
+    View.OnClickListener boLangNghe_XuLyNhan = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            String strSo1 = editTextSo1.getText().toString();
+            String strSo2 = editTextSo2.getText().toString();
+            double so1 = Double.parseDouble(strSo1);
+            double so2 = Double.parseDouble(strSo2);
+            double Tich = so1 * so2;
+            String strKQ = String.valueOf(Tich);
+            editTextKQ.setText(strKQ);
+        }
+    };
+
+    View.OnClickListener boLangNghe_XuLyChia = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            String strSo1 = editTextSo1.getText().toString();
+            String strSo2 = editTextSo2.getText().toString();
+            double so1 = Double.parseDouble(strSo1);
+            double so2 = Double.parseDouble(strSo2);
+            double Thuong = so1 / so2;
+            String strKQ = String.valueOf(Thuong);
+            editTextKQ.setText(strKQ);
+        }
+    };
+
 }
