@@ -15,13 +15,13 @@ public class examViewHolder
         super(itemView);
         examName
                 = (TextView) itemView
-                .findViewById(R.id.examName);
+                .findViewById(R.id.txtExamName);
         examDate
                 = (TextView) itemView
-                .findViewById(R.id.examDate);
+                .findViewById(R.id.txtExamDate);
         examMessage
                 = (TextView) itemView
-                .findViewById(R.id.examMessage);
+                .findViewById(R.id.txtExamMess);
         view = itemView;
     }
 }
