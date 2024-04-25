@@ -6,11 +6,8 @@ import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class SubActivity extends AppCompatActivity {
 
 
     @Override
@@ -22,11 +19,11 @@ public class MainActivity extends AppCompatActivity {
     }
     //Ham dap ung su kien nhan len nut man hinh khac
     //Xu ly chuyen man hinh
-    public void ChuyenManHinh(View v){
+    public void QuayVe(View v){
         // Tao mot doi tuong Intent
         //Tham so thu 2 cua ham tao nay, la ten Activity(man hinh)
-        Intent iManHinhKhac = new Intent( this, SubActivity.class);
+        Intent iManHinhCHINH = new Intent( this, MainActivity.class);
         //Thuc hien chuyen
-        startActivity(iManHinhKhac);
+        startActivity(iManHinhCHINH);
     }
 }
